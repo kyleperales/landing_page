@@ -5,10 +5,13 @@ body {
 	flex-direction: column;
 }
 
+.content-padding {
+	padding: 15px 10rem;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
-	padding: 15px 10rem;
 }
 
 ul {
@@ -26,7 +29,6 @@ ul {
 .hero {
 	display: flex;
 	flex: 1;
-	padding: 15px 10rem;
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
@@ -47,8 +49,8 @@ ul {
 		justify-content: center;
 		align-items: center;
 		> img {
-			height: 250px;
-			width: auto;
+			height: auto;
+			width: 500px;
 		}
 	}
 }
