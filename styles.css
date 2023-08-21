@@ -5,29 +5,14 @@ body {
 	flex-direction: column;
 }
 
-.content-padding {
-	padding: 15px 10rem;
-}
-
 .header {
 	display: flex;
 	justify-content: space-between;
 }
 
-ul {
-	display: flex;
-	gap: 10px;
-	list-style: none;
-	margin: 0;
-	padding: 0;			
-	> li > a {
-		text-decoration: none;
-		color: white;
-	}
-}
-
 .hero {
 	display: flex;
+	min-height: 400px;
 	flex: 1;
 	justify-content: center;
 	align-items: center;
@@ -55,10 +40,107 @@ ul {
 	}
 }
 
+.information {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	min-height: 400px;
+	> div {
+		display: flex;
+		gap: 20px;
+		> div img {
+			height: 150px;
+			width: 150px;
+			border-radius: 10px;
+			border: 2px solid blue
+		}
+	}
+}
+
+.feedback {
+	min-height: 400px;
+	display: flex;
+	align-items: center;
+	> div {
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		> p {
+			margin: 0;
+			padding: 0;
+		}
+		> span {
+			margin-left: auto;
+		}
+	}
+
+}
+
+.sign-up {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	> div {
+		display: flex;
+		border-radius: 10px;
+		padding: 30px;
+		.text-container {
+			display: flex;
+			flex-direction: column;
+			.bold {
+				font-size: 20px;
+				font-weight: bold;
+			}
+		}
+		.button-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 200px;
+			> button {
+				font-weight: bold;
+				border: 2px solid #F9FAF8;
+			}
+		}
+	}
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	font-size: 12px;
+}
+
+/* Common classes/styles */
+
+.content-padding {
+	padding: 15px 10rem;
+}
+
 
 .dark-blue-bg {
 	color: white;
 	background-color: #1F2937;
+}
+
+.grey-bg {
+	background-color: #E5E7EB;
+	color: #1F2937
+}
+
+.blue-bg {
+	color: white;
+	background-color: #3882F6;
+}
+
+.quote-text {
+	font-size: 36px;
+	font-style: italic;
 }
 
 .blue-button {
@@ -66,4 +148,16 @@ ul {
 	background-color: #3882F6;
 	color: white;
 	border-radius: 5px;
+}
+
+ul {
+	display: flex;
+	gap: 10px;
+	list-style: none;
+	margin: 0;
+	padding: 0;			
+	> li > a {
+		text-decoration: none;
+		color: white;
+	}
 }
